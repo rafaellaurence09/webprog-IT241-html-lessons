@@ -6,3 +6,31 @@ h1 {
   color: navy;
   margin-left: 20px;
 }
+
+ul {
+  background: #f2f9ff;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+el {
+  background: #f2f9ff;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+h2 {
+  color: #004c99;
+  margin-top: 20px;
+  border-left: 6px solid #004c99;
+  padding-left: 10px;
+}
+
+h3 {
+  color: #000000;
+  margin-top: 20px;
+  border-left: 6px solid #004c99;
+  padding-left: 10px;
+}
+
+
