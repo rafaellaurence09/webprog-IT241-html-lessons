@@ -62,6 +62,8 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #FFC300; /* Slightly lighter gold on hover */
+.container div:hover {
+    background-color: Orange;
+    color: Black;
+    cursor: pointer;
 }
