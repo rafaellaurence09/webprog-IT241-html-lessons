@@ -1,70 +1,148 @@
-/* Center all content in the body */
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  padding: 20px;
-  background: #1A1A1A; /* Dark gray background to complement the image */
-  color: #F1F1F1; /* Light gray text for contrast */
-  text-align: center; /* Centers inline elements & text */
+  background-color: #1A1A1A;
+  color: #F1F1F1;
+  text-align: center;
+}
+
+.sky-text {
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(to right, #87CEEB, #1E90FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Navbar */
+.navbar {
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Centers block elements */
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
 }
 
-/* Title */
+.nav-links a {
+  color: #FFD700;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Headings */
 h1 {
-  color: #FFD700; /* Gold color for title, to match money theme */
-  margin-bottom: 20px;
+  color: #FFD700;
+  margin-top: 40px;
 }
 
-/* Container styling */
+/* Hero */
+.hero-img {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* Intro */
+.intro {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Flex Containers */
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centers flex items */
+  justify-content: center;
   gap: 20px;
-  background-color: #2C2C2C; /* Dark gray background for container */
   padding: 20px;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 1000px; /* Prevents stretching too wide */
 }
 
-/* Container box styling */
 .container div {
-  background-color: #333333; /* Slightly lighter dark gray for the boxes */
-  width: 250px;
+  background: #2C2C2C;
+  width: 260px;
   padding: 20px;
-  border-radius: 10px;
-  text-align: left;
-  font-size: 18px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  color: #F1F1F1; /* Light gray text */
-}
-
-/* Box headings */
-.container div p:first-child {
-  font-weight: bold;
-  font-size: 22px;
-  margin-bottom: 10px;
-  color: #FFD700; /* Gold text for headings */
-}
-
-/* Button Styling */
-button {
-  background-color: #FFD700; /* Gold color for buttons */
-  color: #1A1A1A; /* Dark text for buttons */
-  border: 2px solid #1A1A1A; /* Dark border around the button */
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s;
 }
 
 .container div:hover {
-    background-color: Orange;
-    color: Black;
-    cursor: pointer;
-    box-shadow: 0 -5px 10px rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
 }
+
+/* Images */
+.container img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Buttons */
+button {
+  background: #FFD700;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: orange;
+}
+
+/* Promo */
+.promo {
+  background: red;
+  color: white;
+  padding: 4px 6px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/* References */
+.references {
+  list-style: none;
+  padding: 0;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background: #111;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+}
+
+.owner-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #FFD700;
+  margin-bottom: 10px;
+}
+
